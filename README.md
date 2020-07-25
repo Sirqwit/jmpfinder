@@ -1,7 +1,7 @@
 jmpfinder
 =========
 
-Jmpfinder is a C/C++ program to find the indirect jump or call instruction of a ELF executable, both aligned and unaligned with respect to the binary's normal instruction stream. The code is heavily influenced by the book: "Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly"
+Jmpfinder is a C/C++ program to find the indirect jump or indirect call instructions of a ELF executable, both aligned and unaligned with respect to the binary's normal instruction stream. The code is heavily influenced by the book: "Practical Binary Analysis: Build Your Own Linux Tools for Binary Instrumentation, Analysis, and Disassembly"
 
 How to build
 ------------
@@ -11,15 +11,15 @@ For the compilation these libraries are required:
 * -lbfd		    (`apt install binutils-dev`)
 * -lcapstone	    (`apt install libcapstone-dev`)
 
-and then make
+and then `make`
 
 How to use
 ----------
 
 Jmpfinder works only with x86_64 target program. 
-The target program must have the table symbols (not stripped) because for instruction searching jmpfinder need the address of the .text sections and his size.
+The target program must have the table symbols (not stripped) because for instruction searching, jmpfinder need the address of the .text section and his size.
 
-**example: **
+**example:**
 
 	   sam: Λ ./jmpfinder /bin/ls
 	   call qword ptr [rax + 0x100f41f3]	[ 0xed82 ]
