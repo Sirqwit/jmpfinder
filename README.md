@@ -21,7 +21,7 @@ The target program must have the table symbols (not stripped) because for instru
 
 **example:**
 
-	   sam: Λ ./jmpfinder /bin/ls
+	   $ ./jmpfinder /bin/ls
 	   call qword ptr [rax + 0x100f41f3]	[ 0xed82 ]
 	   call qword ptr [rax + 0x19b60f41]	[ 0x13252 ]
 	   call qword ptr [rax + 0x1b8]	[ 0xb952 0xbf02 ]
