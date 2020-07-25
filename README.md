@@ -21,23 +21,19 @@ The target program must have the table symbols (not stripped) because for instru
 
 **example:**
 
-	   $ ./jmpfinder /bin/ls
-	   call qword ptr [rax + 0x100f41f3]	[ 0xed82 ]
-	   call qword ptr [rax + 0x19b60f41]	[ 0x13252 ]
-	   call qword ptr [rax + 0x1b8]	[ 0xb952 0xbf02 ]
-	   call qword ptr [rax + 0x20478b48]	[ 0x16b72 ]
-     	   call qword ptr [rax + 0x247c8348]	[ 0xd3c2 ]
-     	   call qword ptr [rax + 0x38478b48]	[ 0x160e2 ]
-     	   call qword ptr [rax + 0x3f07c641]	[ 0x7ea2 ]
-     	   call qword ptr [rax + 0x42247c80]	[ 0x13302 ]
-     	   call qword ptr [rax + 0x43247c80]	[ 0x13562 ]
-     	   call qword ptr [rax + 0x48555441]	[ 0x11112 ]
-     	   call qword ptr [rax + 0x48ec8348]	[ 0x145e2 ]
-     	   call qword ptr [rax + 0x48f08948]	[ 0xff52 ]
-     	   call qword ptr [rax + 0x4b00c7]	[ 0x15452 ]
-     	   call qword ptr [rax + 0x4c138b48]	[ 0x6fd2 ]
-     	   call qword ptr [rax + 0x4cfa894c]	[ 0xa622 ]
-	   .....
+	$ ./jmpfinder /bin/ls
+	call qword ptr [rax + 0x100f41f3]	[ 0xed82 ]
+	call qword ptr [rax + 0x19b60f41]	[ 0x13252 ]
+	call qword ptr [rax + 0x1b8]	[ 0xb952 0xbf02 ]
+	call qword ptr [rax + 0x20478b48]	[ 0x16b72 ]
+	call qword ptr [rax + 0x247c8348]	[ 0xd3c2 ]
+	call qword ptr [rax + 0x38478b48]	[ 0x160e2 ]
+	call qword ptr [rax + 0x3f07c641]	[ 0x7ea2 ]
+	call qword ptr [rax + 0x42247c80]	[ 0x13302 ]
+	call qword ptr [rax + 0x43247c80]	[ 0x13562 ]
+	call qword ptr [rax + 0x48555441]	[ 0x11112 ]
+	call qword ptr [rax + 0x48ec8348]	[ 0x145e2 ]
+	call qword ptr [rax + 0x48f08948]	[ 0xff52 ]
 
 
 
