@@ -1,2 +1,2 @@
 # jmpfinder
-find jmp and call instruction of a linux executables
+Find jmp and call instructions of a linux executable
