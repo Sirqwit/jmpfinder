@@ -7,7 +7,8 @@ How to build
 ------------
 
 For the compilation these libraries are required:
--lbfd		    (`apt install binutils-dev`)
--lcapstone	    (`apt install libcapstone-dev`)
+* -lbfd		    (`apt install binutils-dev`)
+* -lcapstone	    (`apt install libcapstone-dev`)
+
 
 
